@@ -1,53 +1,146 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-p{
+
+p {
     line-height: 1rem;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+/* END RESET */
+
 
 /* INIT */
 
-:root{
+:root {
     /* :root{--test: pink;} body{background-color: var(--test);} */
 
     /* color */
@@ -65,17 +158,26 @@ table {
     /* size */
     --heightNav: 40px;
 }
-body, html{
+
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: var(--fontText);
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fontTitle);
     font-weight: 500;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -85,28 +187,34 @@ a{
 
 /* NAV */
 
-.navbar{
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     background-color: var(--colorBg2);
     box-shadow: inset 0 -3px 5px 0 rgba(0, 0, 0, 0.15),
-                0 3px 4px rgba(0, 0, 0, 0.25);
+        0 3px 4px rgba(0, 0, 0, 0.25);
     color: var(--colorBtn1);
     height: var(--heightNav);
     overflow: hidden;
     z-index: 500;
 }
-.navbar-title{
+
+.navbar-title {
     margin-left: 15px;
     font-size: 1.2rem;
     text-transform: uppercase;
     white-space: nowrap;
 }
-.navbar-burger{
+
+.navbar-burger {
     margin-right: 15px;
     font-size: 1.2rem;
     line-height: var(--heightNav);
@@ -115,12 +223,14 @@ a{
     display: block;
     cursor: pointer;
     -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
-.navbar-burger:hover{
+
+.navbar-burger:hover {
     opacity: 0.6;
 }
-.navbar-menu{
+
+.navbar-menu {
     margin-right: 15px;
     height: 100%;
     position: relative;
@@ -130,29 +240,33 @@ a{
     opacity: 0;
 
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
 }
-.navbar-menu li{
+
+.navbar-menu li {
     list-style: none;
     font-size: 1rem;
-    font-weight: 300px;
+    font-weight: 300;
     font-family: var(--fontTitle);
     color: var(--colorBtn1);
-    opacity: 0.75;
+    opacity: 0.85;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
     padding: 0 10px;
 
     -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
-.navbar-menu li:hover{
-    opacity: 1;
+
+.navbar-menu li:hover {
+    opacity: 0.9;
 }
+
 #toggle {
     display: none;
 }
-#toggle:checked + .navbar-menu {
-    position: absolute;
+
+#toggle:checked+.navbar-menu {
+    position: fixed;
     display: block;
     visibility: visible;
     opacity: 1;
@@ -160,7 +274,8 @@ a{
     top: var(--heightNav);
     left: 0;
 }
-#toggle:checked + .navbar-menu li{
+
+#toggle:checked+.navbar-menu li {
     height: var(--heightNav);
     text-align: center;
     line-height: var(--heightNav);
@@ -169,41 +284,55 @@ a{
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
 
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
 }
-#toggle:checked + .navbar-menu li:hover{
-    box-shadow: inset 0 0 5px -1px rgba(0,0,0,.8);
+
+#toggle:checked+.navbar-menu li:hover {
+    box-shadow: inset 0 0 5px -1px rgba(0, 0, 0, .8);
 }
 
 /* END NAV */
 
 
+/* MAIN */
+
+
+#main:target {
+    padding-top: 40px; 
+    margin-top: -40px; 
+}
+
+
+
+/* END HEARDER */
 
 
 /* MEDIA */
 
 @media only screen and (min-width: 768px) {
-    .navbar-menu{
+    .navbar-menu {
         display: -webkit-box;
         display: flex;
         top: 0;
         right: 0;
         -webkit-box-align: center;
-                align-items: center;
+        align-items: center;
         visibility: visible;
-        opacity: 1!important;
+        opacity: 1 !important;
     }
-    #toggle:checked + .navbar-menu {
+
+    #toggle:checked+.navbar-menu {
         position: relative;
         display: -webkit-box;
         display: flex;
         -webkit-box-pack: end;
-                justify-content: flex-end;
+        justify-content: flex-end;
         width: auto;
         top: 0;
         right: 0px;
     }
-    #toggle:checked + .navbar-menu li{
+
+    #toggle:checked+.navbar-menu li {
         width: auto;
         height: var(--heightNav);
         text-align: center;
@@ -212,10 +341,12 @@ a{
         box-shadow: unset;
         border: unset
     }
-    #toggle:checked + .navbar-menu li:hover{
+
+    #toggle:checked+.navbar-menu li:hover {
         box-shadow: unset;
     }
-    .navbar-burger{
+
+    .navbar-burger {
         display: none;
     }
 }
