@@ -2,7 +2,6 @@
     /* display: none; */
     padding-top: var(--heightNav);
     height: calc(100vh - var(--heightNav));
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-am-gallery] {
@@ -198,7 +197,18 @@
     font-family: var(--fontTitle);
 }
 
+/* MEDIA */
 
+@media only screen and (min-width: 576px) {
+    .headerslide {
+        height: calc(50vh - var(--heightNav));
+    }
+}
+
+/* END MEDIA */
+
+
+/* ANIMATION */
 
 @-webkit-keyframes bounce-top {
     0% {
@@ -305,4 +315,5 @@
       opacity: 1;
     }
   }
-  
+
+  /* END ANIMATION */
