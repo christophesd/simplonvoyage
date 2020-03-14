@@ -84,8 +84,6 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -109,7 +107,7 @@ html {
 }
 
 p {
-    line-height: 1rem;
+    line-height: 1.1rem;
 }
 
 ol,
@@ -135,6 +133,11 @@ table {
     border-spacing: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* END RESET */
 
 
@@ -155,8 +158,9 @@ table {
     --fontText: 'Roboto', sans-serif;
     --fontTitle: 'Nunito', sans-serif;
 
-    /* size */
+    /* size - nb  */
     --heightNav: 40px;
+    --nbMenu: 2;
 }
 
 body,
@@ -165,6 +169,8 @@ html {
     padding: 0;
     font-family: var(--fontText);
     box-sizing: border-box;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 h1,
@@ -177,9 +183,11 @@ h6 {
     font-weight: 500;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+h2 {
+    font-size: 1.5em;
+    color: var(--colorBtn1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
 }
 
 /* END INT */
@@ -273,6 +281,7 @@ a {
     width: 100%;
     top: var(--heightNav);
     left: 0;
+    height: calc(var(--nbMenu) * var(--heightNav));
 }
 
 #toggle:checked+.navbar-menu li {
@@ -298,8 +307,16 @@ a {
 
 
 #main:target {
-    padding-top: 40px; 
+    padding-top: 55px; 
     margin-top: -40px; 
+}
+
+#main {
+    padding: 15px 10px;
+}
+
+.cards {
+    display: grid;
 }
 
 
