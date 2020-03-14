@@ -160,6 +160,7 @@ a {
 
     /* size - nb  */
     --heightNav: 40px;
+    --marginNavLR: 15px;
     --nbMenu: 2;
 }
 
@@ -198,8 +199,7 @@ h2 {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
-
+    width: 100vw;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
@@ -216,14 +216,14 @@ h2 {
 }
 
 .navbar-title {
-    margin-left: 15px;
+    margin-left: var(--marginNavLR);
     font-size: 1.2rem;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
 .navbar-burger {
-    margin-right: 15px;
+    margin-right: var(--marginNavLR);
     font-size: 1.2rem;
     line-height: var(--heightNav);
     position: absolute;
@@ -239,7 +239,7 @@ h2 {
 }
 
 .navbar-menu {
-    margin-right: 15px;
+    margin-right: var(--marginNavLR);
     height: 100%;
     position: relative;
     right: -100vw;
@@ -274,11 +274,12 @@ h2 {
 }
 
 #toggle:checked+.navbar-menu {
+    margin-right: - var(--marginNavLR);
     position: fixed;
     display: block;
     visibility: visible;
     opacity: 1;
-    width: 100%;
+    width: 100vw;
     top: var(--heightNav);
     left: 0;
     height: calc(var(--nbMenu) * var(--heightNav));
@@ -312,13 +313,86 @@ h2 {
 }
 
 #main {
-    padding: 15px 10px;
+    padding: var(--marginNavLR) 10px;
+    background-color: var(--colorBg2);
 }
 
+/* card */
 .cards {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
 
+.cards .card {
+    height: 50vw;
+    border-radius: 5px;
+    color: var(--colorBg1);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.cards .card .card-img{
+    position: absolute;
+    width: 100%;
+}
+.cards .card .card-content {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    padding: 10px 4%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.cards .card .card-content > * {
+    margin: 5px 0;
+}
+
+.cards .card .card-content .card-content-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 1.1em;
+}
+
+.cards .card .card-content .card-content-price {
+    font-size: 1.1em;
+    font-family: var(--fontTitle);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.65);
+}
+
+.cards .card .card-content .card-content-seemore {
+    display: block;
+    position: absolute;
+    right: 4%;
+    bottom: 3px;
+    padding: 2.5px 10px;
+    background-color: var(--colorBtn1);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-family: var(--fontTitle);
+}
+/* end card */
+
+.linkpage {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: var(--fontTitle);
+    color: var(--colorBtn1);
+    font-weight: 600;
+}
+.linkpage a {
+    margin: 0 4px;
+    font-size: 1.4em;
+    line-height: 0.9em;
+}
 
 
 /* END HEARDER */

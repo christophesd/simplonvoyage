@@ -7,7 +7,7 @@
 
 [data-am-gallery] {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #fff;
     /* Navigation */
@@ -143,8 +143,8 @@
 }
 
 [data-am-gallery] .image .slide-content {
-    padding: 10px;
-    width: 96%;
+    margin: 10px;
+    width: 96vw;
     color: var(--colorBg1);
     border-radius: 5px;
     z-index: 1;
@@ -179,7 +179,6 @@
 
 [data-am-gallery] .image .slide-price {
     color: var(--colorText2);
-    font-weight: 600;
     font-size: 1.4em;
     font-family: var(--fontTitle);
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.65);
@@ -188,13 +187,13 @@
 [data-am-gallery] .image .slide-seemore {
     display: block;
     position: absolute;
-    right: 2%;
-    bottom: 6px;
+    right: 2vw;
+    bottom: 3px;
     padding: 2.5px 10px;
     background-color: var(--colorBtn1);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.20);
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em;
     font-family: var(--fontTitle);
 }
