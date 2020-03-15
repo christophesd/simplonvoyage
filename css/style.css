@@ -322,7 +322,7 @@ body:nth-child(2) {
 }
 
 #main > div {
-    margin-bottom: 2.2em;
+    margin-bottom: 1em;
 }
 
 #main > div:last-child {
@@ -584,6 +584,9 @@ body:nth-child(2) {
         font-size: 0.95rem;
     }
 
+    #main > div {
+        margin-bottom: 0em;
+    }
     /* end init */
 
     /* nav */

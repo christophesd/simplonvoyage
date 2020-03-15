@@ -277,6 +277,13 @@
     .headerslide {
         height: calc(50vh - var(--heightNav));
     }
+    .galleryslide {
+        height: 70%;
+    }
+    .mini {
+        margin-top: 8px;
+        height: 27%;
+    }
 }
 
 /* END MEDIA */
