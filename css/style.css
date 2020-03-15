@@ -159,8 +159,8 @@ a {
     --fontTitle: 'Nunito', sans-serif;
 
     /* size - nb  */
-    --heightNav: 40px;
-    --marginNavLR: 15px;
+    --heightNav: 50px;
+    --marginNavLR: 2vw;
     --nbMenu: 2;
 }
 
@@ -195,6 +195,10 @@ h2 {
 
 
 /* NAV */
+
+body:nth-child(2) {
+    padding-top: var(--heightNav);
+}
 
 .navbar {
     position: fixed;
@@ -259,7 +263,7 @@ h2 {
     color: var(--colorBtn1);
     opacity: 0.85;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
-    padding: 0 10px;
+    padding-left: 1.5em;
 
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
@@ -293,6 +297,7 @@ h2 {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
     background-color: var(--colorBg1);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+    padding-left: 0;
 
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -550,7 +555,8 @@ h2 {
         line-height: var(--heightNav);
         background-color: unset;
         box-shadow: unset;
-        border: unset
+        border: unset;
+        padding-left: 1.5em;
     }
 
     #toggle:checked+.navbar-menu li:hover {
@@ -564,26 +570,27 @@ h2 {
     /* end nav */
 }
 
-@media only screen and (min-width: 720px) {
-
-    /* nav */
-    :root {
-        --heightNav: 50px;
-        --marginNavLR: 25px;
-    }
-
+@media only screen and (min-width: 800px) {
+    /* init */
     html,
     body {
         font-size: 0.95rem;
     }
 
-    /* end nev */
+    /* end init */
+
+    /* nav */
+    :root {
+        --marginNavLR: 1.5vw;
+    }
+
+    /* end nav */
 
     /* cards */
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
+        grid-gap: 1.3vw;
     }
 
     .cards .card {
@@ -598,12 +605,12 @@ h2 {
     /* end cards */
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1300px) {
 
     /* nav */
     :root {
         --heightNav: 60px;
-        --marginNavLR: 35px;
+        --marginNavLR: 30px;
     }
 
     html,
@@ -639,6 +646,7 @@ h2 {
     #footer .follow,
     #footer .newsletter {
         background-color: var(--colorBg1);
+        margin-bottom: 0;
     }
     #footer > div,
     #footer > div > * {

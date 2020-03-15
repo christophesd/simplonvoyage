@@ -1,0 +1,13 @@
+.navpage {
+    padding: 0 var(--marginNavLR);
+    background-color: var(--colorBg1);
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+}
+.navpage li {
+    display: inline-block;
+}
+.navpage li a {
+    text-decoration: underline;
+}

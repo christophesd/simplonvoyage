@@ -1,14 +1,19 @@
 .headerslide {
-    /* display: none; */
-    padding-top: var(--heightNav);
     height: calc(100vh - var(--heightNav));
+    width: 100vw;
+}
+.galleryslide {
+    width: 100%;
+    height: 50vw;
+    border-radius: 5px;
 }
 
 [data-am-gallery] {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: #fff;
+    border-radius: inherit;
     /* Navigation */
 }
 
@@ -77,6 +82,10 @@
     opacity: 1;
 }
 
+[data-am-gallery] .images {
+    border-radius: inherit;
+}
+
 [data-am-gallery] .image {
     display: -webkit-box;
     display: flex;
@@ -99,6 +108,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: inherit;
 }
 
 [data-am-gallery] .image::before {
@@ -110,6 +120,7 @@
     right: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(68.75%, rgba(0, 0, 0, 0)), color-stop(81.25%, rgba(0, 0, 0, 0.15)), color-stop(94.27%, rgba(0, 0, 0, 0.3)));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.15) 81.25%, rgba(0, 0, 0, 0.3) 94.27%);
+    border-radius: inherit;
 }
 
 [data-am-gallery] .image .gotobottom {
@@ -122,8 +133,9 @@
 }
 
 [data-am-gallery] .navigation {
-    position: absolute;
-    margin-top: 2%;
+    width: fit-content;
+    position: relative;
+    top: 3%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -148,15 +160,21 @@
 }
 
 [data-am-gallery] .image .slide-content {
-    margin: 10px;
-    width: 96vw;
+    padding: 2%;
+    width: 96%;
     color: var(--colorBg1);
     border-radius: 5px;
     z-index: 1;
 }
 
+[data-am-gallery] .image .blackshadow {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
 [data-am-gallery] .image .slide-content>* {
-    margin: 6px 0;
+    margin: 1% 0;
 }
 
 [data-am-gallery] .image .slide-title::before {
@@ -182,6 +200,12 @@
     font-size: 1.1em;
 }
 
+[data-am-gallery] .image .slide-p-des {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 1em;
+    margin: 0;
+}
+
 [data-am-gallery] .image .slide-price {
     color: var(--colorText2);
     font-size: 1.4em;
@@ -192,8 +216,8 @@
 [data-am-gallery] .image .slide-seemore {
     display: block;
     position: absolute;
-    right: 2vw;
-    bottom: 3px;
+    right: 2%;
+    bottom: 0.5%;
     padding: 2.5px 10px;
     background-color: var(--colorBtn1);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.20);
@@ -205,7 +229,7 @@
 
 /* MEDIA */
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 800px) {
     .headerslide {
         height: calc(50vh - var(--heightNav));
     }
