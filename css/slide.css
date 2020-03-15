@@ -10,6 +10,8 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 0.5px black;
 }
 
+
+
 .mini {
     margin-top: 5px;
     width: 100%;
@@ -62,7 +64,7 @@
 .gallery input[type="radio"]:checked:nth-child(1)~.mini > label:nth-child(1),
 .gallery input[type="radio"]:checked:nth-child(2)~.mini > label:nth-child(2),
 .gallery input[type="radio"]:checked:nth-child(3)~.mini > label:nth-child(3) {
-    box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 0.5px black;
+    box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5), 0 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 0.5px black;
 }
 
 .gallery input[type="radio"]:checked:nth-child(1)~div [data-am-gallery] .images .image:nth-child(1),
@@ -175,7 +177,7 @@
     min-height: 19px;
     height: 9%;
     cursor: pointer;
-    z-index: 555;
+    z-index: 55;
     background: no-repeat center url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 41 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cg filter='url(%23filter0_d)'%3E %3Cpath d='M20.3056 18.4359L20.3052 18.4363C20.0064 18.7732 20.0043 19.2254 20.306 19.5691C20.3062 19.5693 20.3064 19.5696 20.3066 19.5698L33.4237 34.3898C33.4239 34.39 33.424 34.3901 33.4242 34.3903C33.4763 34.4483 33.5778 34.5 33.6982 34.5H37.4031L23.9813 19.3313L23.6881 19L23.9813 18.6687L37.4031 3.5H33.6982C33.5714 3.5 33.475 3.55135 33.428 3.60538L33.428 3.60539L33.4252 3.6086L20.3056 18.4359ZM37.62 34.7451L37.6199 34.745L37.62 34.7451ZM4.68336 18.4359L4.68298 18.4363C4.38409 18.7733 4.38206 19.2256 4.68397 19.5694C4.68411 19.5695 4.68425 19.5697 4.68439 19.5698L17.8015 34.3898C17.8017 34.39 17.8019 34.3902 17.8021 34.3904C17.8542 34.4484 17.9556 34.5 18.076 34.5H21.7809L8.35904 19.3313L8.06586 19L8.35904 18.6687L21.7809 3.5H18.076C17.9492 3.5 17.8528 3.55135 17.8058 3.60538L17.8058 3.60539L17.8029 3.6086L4.68336 18.4359Z' stroke='white'/%3E %3C/g%3E %3Cdefs%3E %3Cfilter id='filter0_d' x='0.958252' y='0' width='40.1243' height='38' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E %3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E %3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E %3CfeOffset/%3E %3CfeGaussianBlur stdDeviation='1.5'/%3E %3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.65 0'/%3E %3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E %3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E %3C/filter%3E %3C/defs%3E %3C/svg%3E");
 }
 
@@ -190,7 +192,7 @@
     min-height: 19px;
     height: 9%;
     cursor: pointer;
-    z-index: 555;
+    z-index: 55;
     -webkit-transition: unset;
     transition: unset;
     background: no-repeat center url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 41 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cg filter='url(%23filter0_d)'%3E %3Cpath d='M20.9019 18.4359L20.9023 18.4363C21.2011 18.7732 21.2032 19.2254 20.9016 19.5691C20.9013 19.5693 20.9011 19.5696 20.9009 19.5698L7.78378 34.3898C7.78363 34.39 7.78348 34.3901 7.78333 34.3903C7.73126 34.4483 7.62975 34.5 7.5093 34.5H3.80441L17.2263 19.3313L17.5194 19L17.2263 18.6687L3.80441 3.5H7.5093C7.63612 3.5 7.73253 3.55135 7.77952 3.60538L7.7795 3.60539L7.78234 3.6086L20.9019 18.4359ZM3.58756 34.7451L3.58765 34.745L3.58756 34.7451ZM36.5242 18.4359L36.5245 18.4363C36.8234 18.7733 36.8255 19.2256 36.5235 19.5694C36.5234 19.5695 36.5233 19.5697 36.5231 19.5698L23.406 34.3898C23.4058 34.39 23.4056 34.3902 23.4054 34.3904C23.3533 34.4484 23.2519 34.5 23.1315 34.5H19.4266L32.8485 19.3313L33.1417 19L32.8485 18.6687L19.4266 3.5H23.1315C23.2583 3.5 23.3548 3.55135 23.4017 3.60538L23.4017 3.60539L23.4046 3.6086L36.5242 18.4359Z' stroke='white'/%3E %3C/g%3E %3Cdefs%3E %3Cfilter id='filter0_d' x='0.125' y='0' width='40.1243' height='38' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E %3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E %3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E %3CfeOffset/%3E %3CfeGaussianBlur stdDeviation='1.5'/%3E %3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.65 0'/%3E %3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E %3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E %3C/filter%3E %3C/defs%3E %3C/svg%3E");

@@ -107,7 +107,7 @@ html {
 }
 
 p {
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 ol,
@@ -216,7 +216,7 @@ body:nth-child(2) {
     color: var(--colorBtn1);
     height: var(--heightNav);
     overflow: hidden;
-    z-index: 500;
+    z-index: 9999999;
 }
 
 .navbar-title {
@@ -261,7 +261,7 @@ body:nth-child(2) {
     font-weight: 300;
     font-family: var(--fontTitle);
     color: var(--colorBtn1);
-    opacity: 0.85;
+    opacity: 0.90;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
     padding-left: 1.5em;
 
@@ -270,7 +270,7 @@ body:nth-child(2) {
 }
 
 .navbar-menu li:hover {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 #toggle {
@@ -278,7 +278,6 @@ body:nth-child(2) {
 }
 
 #toggle:checked+.navbar-menu {
-    /* margin-right: - var(--marginNavLR); */
     margin-right: calc(var(--marginNavLR) - 2* var(--marginNavLR));
     position: fixed;
     display: block;
@@ -313,13 +312,21 @@ body:nth-child(2) {
 /* MAIN */
 
 #main:target {
-    padding-top: calc(var(--heightNav) + 2em);
+    padding-top: calc(var(--heightNav) + 2.4em);
     margin-top: calc(var(--heightNav) - 2* var(--heightNav));
 }
 
 #main {
-    padding: 2em var(--marginNavLR);
+    padding: 2.4em var(--marginNavLR);
     background-color: var(--colorBg2);
+}
+
+#main > div {
+    margin-bottom: 2.2em;
+}
+
+#main > div:last-child {
+    margin-bottom: 0em;
 }
 
 /* card */
