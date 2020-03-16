@@ -4,8 +4,9 @@ Réalisation d'une maquette suivant un cahier des charges (avec différentes con
 
 Maquette sur Figma : https://www.figma.com/file/AdAn683MR2dsifEqJCcDVl/Simplon-Voyage?node-id=36%3A2377
 
-2020-03-09 : Réalisation de la Maquette
-2020-03-13 : Maquette "terminé" début du codage
-2020-03-14 : Home Page terminé
-2020-03-15 : Page Produit terminé + debut d'un responsive
-2020-03-16 : Site finalisé, débugué, responsive, hover + contact
+2020-03-09 :    Réalisation de la Maquette
+2020-03-13 :    Maquette "terminé" début du codage
+2020-03-14 :    Home Page terminé
+2020-03-15 :    Page Produit terminé + debut d'un responsive
+2020-03-16 :    Site finalisé, débugué, responsive, hover + contact
+                Exportation sur le Master V1
