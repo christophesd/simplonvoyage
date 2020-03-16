@@ -2,9 +2,23 @@
 <div id="contact" class="modal" style="opacity:0">
     <div class="content-modal">
         <h2>Contactez-nous :</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis soluta corporis consequuntur, nihil deserunt, libero illo voluptas, quam quidem recusandae eveniet. Incidunt molestiae, sapiente minus earum reiciendis nobis vitae autem!</p>
-        
-        
+        <form action="">
+            <div>
+                <label for="name">Nom: </label>
+                <input type="text" name="name" id="name" class="form-item" required value="<?php echo $name;?>">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="form-item" required value="<?php echo $email;?>">
+            </div>
+            <div>
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" class="form-item" required><?php echo $message;?></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" class="form-item submit">
+            </div>
+        </form>
         <a href="#close" title="Fermer" class="close-modal"></a>
     </div>
 </div>

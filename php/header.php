@@ -23,7 +23,7 @@
                         <span class="slide-title">Les meilleurs Deals</span>
                         <p class="slide-p">Vacances 4* à Miami : 7 jours à partir de 684€, hôtel 4* avec piscine et vol A/R inclus</p>
                         <span class="slide-price">à partir de 684€</span>
-                        <a href="#" class="slide-seemore">Voir le Deal</a>
+                        <a href="./voyage001.php" class="slide-seemore">Voir le Deal</a>
                     </div>
                 </div>
                 <div class="image" style="background-image: url(./img/destination/003/main.jpg);">
@@ -32,7 +32,7 @@
                         <span class="slide-title">Les meilleurs Deals</span>
                         <p class="slide-p">Vacances 4* à Miami : 7 jours à partir de 684€, hôtel 4* avec piscine et vol A/R inclus</p>
                         <span class="slide-price">à partir de 684€</span>
-                        <a href="#" class="slide-seemore">Voir le Deal</a>
+                        <a href="./voyage001.php" class="slide-seemore">Voir le Deal</a>
                     </div>
                 </div>
             </div>
