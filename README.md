@@ -8,3 +8,4 @@ Maquette sur Figma : https://www.figma.com/file/AdAn683MR2dsifEqJCcDVl/Simplon-V
 2020-03-13 : Maquette "terminé" début du codage
 2020-03-14 : Home Page terminé
 2020-03-15 : Page Produit terminé + debut d'un responsive
+2020-03-16 : Site finalisé, débugué, responsive, hover + contact

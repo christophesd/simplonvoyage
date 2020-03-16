@@ -19,6 +19,9 @@
                 <input type="submit" value="Envoyer" class="form-item submit">
             </div>
         </form>
+
+        
+
         <a href="#close" title="Fermer" class="close-modal"></a>
     </div>
 </div>

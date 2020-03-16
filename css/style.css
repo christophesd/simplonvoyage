@@ -106,10 +106,6 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    line-height: 1.4em;
-}
-
 ol,
 ul {
     list-style: none;
@@ -136,6 +132,14 @@ table {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.4em;
 }
 
 /* END RESET */
