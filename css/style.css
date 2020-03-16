@@ -624,7 +624,7 @@ form {
 }
 
 form > div {
- margin: 1em 0.5;
+ margin: 0.5em 0;
 }
 
 .form-item {
