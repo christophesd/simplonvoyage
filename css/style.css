@@ -527,6 +527,94 @@ body:nth-child(2) {
 
 /* END FOOTER */
 
+
+/* MODAL CSS */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 7px;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    flex-wrap: wrap;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
+}
+.modal:target{
+    opacity:1!important;
+    pointer-events: auto;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(0vw);
+            transform: translateY(0vw);
+}
+.content-modal{
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 5px;
+    border-radius: 10px;
+    width: 95%;
+    height: 70vh;
+    overflow: scroll;
+}
+.content-modal > *{
+    max-width: calc(var(--widthpage) - 50px);
+}
+.close-modal{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/close.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.close-modal:hover{  
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+}
+@media only screen and (min-width: 300px) {
+    .content-modal{
+        padding: 20px;
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .content-modal{
+        padding: 30px;
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+/* END MODEL */
+
 /* MEDIA */
 
 @media only screen and (min-width: 576px) {

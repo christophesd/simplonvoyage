@@ -66,17 +66,18 @@
                         <label class="dot" for="img-3"></label>
                     </div>
                     <div class="leftright">
+
                         <div class="slide">
-                            <label class="left" for="img-3"></label>
-                            <label class="right" for="img-2"></label>
+                            <label for="img-3"><div class="left"></div></label>
+                            <label for="img-2"><div class="right"></div></label>
                         </div>
                         <div class="slide">
-                            <label class="left" for="img-1"></label>
-                            <label class="right" for="img-3"></label>
+                            <label for="img-1"><div class="left"></div></label>
+                            <label for="img-3"><div class="right"></div></label>
                         </div>
                         <div class="slide">
-                            <label class="left" for="img-2"></label>
-                            <label class="right" for="img-1"></label>
+                            <label for="img-2"><div class="left"></div></label>
+                            <label for="img-1"><div class="right"></div></label>
                         </div>
                     </div>
                 </div>
@@ -201,6 +202,7 @@
 
 
     <?php include ('php/footer.php'); ?>
+    <?php include ('php/contact.php'); ?>
 
 </body>
 

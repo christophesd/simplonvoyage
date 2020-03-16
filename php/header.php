@@ -42,6 +42,21 @@
                 <label class="dot" for="img-2"></label>
                 <label class="dot" for="img-3"></label>
             </div>
+            <div class="leftright">
+
+                <div class="slide">
+                    <label for="img-3"><div class="left"></div></label>
+                    <label for="img-2"><div class="right"></div></label>
+                </div>
+                <div class="slide">
+                    <label for="img-1"><div class="left"></div></label>
+                    <label for="img-3"><div class="right"></div></label>
+                </div>
+                <div class="slide">
+                    <label for="img-2"><div class="left"></div></label>
+                    <label for="img-1"><div class="right"></div></label>
+                </div>
+            </div>
         </div>
     </div>
 </header>

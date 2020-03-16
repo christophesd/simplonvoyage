@@ -105,6 +105,7 @@
 
 
     <?php include ('php/footer.php'); ?>
+    <?php include ('php/contact.php'); ?>
 
 </body>
 
