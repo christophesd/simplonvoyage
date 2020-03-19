@@ -20,8 +20,6 @@
             </div>
         </form>
 
-        
-
         <a href="#close" title="Fermer" class="close-modal"></a>
     </div>
 </div>
