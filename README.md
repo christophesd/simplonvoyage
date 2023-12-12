@@ -15,4 +15,3 @@ Le site : https://saidoun.simplon-charleville.fr/simplonvoyage/
 2020-03-19 :    Debug newsletter + responsive modal
 
 
-
